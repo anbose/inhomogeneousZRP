@@ -29,12 +29,10 @@ echo on `hostname`
 echo Beta = 20
 echo ------------
 
-Np=$"9000"
+Np=$"9000" ## Num of particles
+Nc=$"153"  ## Critical population
 
-outputDirectory=$"/scratch03.local/abose/lattice_model/dataNewParams/N"$Np$"/"
-
-Nc=$"153"
-#TOld=$"10.508"
+outputDirectory=$"output/"
 
 mkdir $outputDirectory
 mkdir $outputDirectory$"Beta5"$"_Nc"$Nc$"/"
